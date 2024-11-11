@@ -10,16 +10,18 @@
     <input type="text" id="key" placeholder="ключ">
     <button onclick="encrypt()"> Зашифровать</button>
     <div id="encrypted"></div>
+    <br>
+    <div id="unEncrypted"></div>
 </body>
 <script>
     let text0 = document.getElementById('t0');
     let key = document.getElementById('key');
     let encr = document.getElementById('encrypted');
-    let unEncr = document.getElementDyId('unEncrypted'); // ***
+    let unEncr = document.getElementDyId('unEncrypted');
 
     function encrypt(){
         let t = text0.value;
-        let len = t.lenght
+        let len = t.length;
 
         for (let i=0; i <len; i++){
             let uniCode = t.charCodeAt (i);
